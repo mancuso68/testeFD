@@ -49,7 +49,7 @@ Para os dois casos eu utilizaria o manuseio dos dados com Pandas ordenando por v
 Para o caso de apresentar mensalmente eu utilizaria um gráfico de Barras mensal com a identificação de cada “Top 5” mês a mês para facilitar a comparação entre eles.
 Para o caso de apresentar o “Top 5” do período completo, faria um gráfico de barras de um único período com os 5 produtos para facilitar a comparação entre eles.
 
-   **iii. Como as vendas variam por categoria de produtos?**
+**iii. Como as vendas variam por categoria de produtos?**
 Para visualização dessa informação, com o Pandas, faria um “Group” por categoria somando as vendas de cada categoria.
 Novamente essa informação poderia ser apresentada dentro de forma periódica ou resumida de forma totalizada para o período.
 Em ambos os casos eu utilizaria novamente gráfico de barras para a apresentação dos dados.
@@ -95,43 +95,41 @@ Treinava novamente o Algoritmo
 Criava uma rotina automatizada
  
 
-TESTE 2 – 
+## TESTE 2 
 
-1)	Como funciona o teste de hipóteses e qual é a sua finalidade na análise estatística?
+### 1) Como funciona o teste de hipóteses e qual é a sua finalidade na análise estatística?
 O teste de hipótese tem como finalidade avaliar se existe evidências suficientes que rejeite uma hipótese nula em favor de uma hipótese alternativa.
 Utiliza amostras de uma população e através de cálculos estatísticos, testes e tomadas de decisão com base na comparação de resultados entre uma Hipótese Nula e uma hipótese alternativa.
 
-2)	O que são redes generativas adversárias (GANs) e quais são os possíveis usos dessas redes?
+### 2) O que são redes generativas adversárias (GANs) e quais são os possíveis usos dessas redes?
 As GANs são algoritmos generativos que possuem duas redes neurais sendo uma geradora e outra discriminadora que são treinadas simultaneamente.
 É usado para geração de imagens e textos.
 
-3)	O que são modelos de linguagem? Qual a diferença entre LLMs e modelos de linguagem tradicionais?
+### 3) O que são modelos de linguagem? Qual a diferença entre LLMs e modelos de linguagem tradicionais?
 Os modelos de linguagem trabalham com a previsão de palavras numa frase utilizando regras ou estatísticas simples.
 As LLMs já utilizam arquiteturas de Redes Neurais para conhecer padrões e propor textos de forma mais eficiente 
 
-4)	Suponha que você tenha um conjunto de dados com três ou mais grupos para comparar e deseja determinar se há diferenças significativas entre eles. Descreva como você escolheria entre o teste ou outras técnicas estatísticas
+### 4) Suponha que você tenha um conjunto de dados com três ou mais grupos para comparar e deseja determinar se há diferenças significativas entre eles. Descreva como você escolheria entre o teste ou outras técnicas estatísticas
 Eu faria uma análise através da variância para determinar se utilizaria um teste ou técnica estatística.
 
-5)	Qual é a importância do pré-processamento de texto em tarefas de NLP? Quais são as etapas comuns no pré-processamento de texto?
+### 5) Qual é a importância do pré-processamento de texto em tarefas de NLP? Quais são as etapas comuns no pré-processamento de texto?
 O pré-processamento do texto para trabalhar com Linguagem Natural é fundamental para deixar o texto num formato e padrão que esteja adequado para a leitura do Algoritmo. Retira informações desnecessárias e normaliza o texto.
 As etapas desse pré-processamento consistem em retirada dos stop words e caracteres especiais, tokenização e lematização.
 
-6)	Descreva o processo de vetorização de texto e como modelos de linguagem como o Word2Vec ou o TF-IDF podem ser usados para representar palavras e documentos.
+### 6) Descreva o processo de vetorização de texto e como modelos de linguagem como o Word2Vec ou o TF-IDF podem ser usados para representar palavras e documentos.
 O processo de vetorização é uma coisa relativamente nova para mim. Comecei a estudar recentemente, mas basicamente consiste em transformar uma palavra em uma sequência numérica, ou seja, transformar uma palavra num vetor numérico (word embaddings).
 Sinônimos ou palavra dentro do mesmo contexto ficam numericamente mais próximas.
 O Word2Vec faz exatamente essa proximidade entre palavras semelhantes. Já o TF-IDF já utiliza pesos com base na frequência da palavra no texto.
 
-7)	O que é a análise de sentimento em NLP e quais são os principais métodos para realizar essa tarefa? Como você avaliaria a eficácia de um modelo de análise de sentimento?
+### 7) O que é a análise de sentimento em NLP e quais são os principais métodos para realizar essa tarefa? Como você avaliaria a eficácia de um modelo de análise de sentimento?
 A Análise de sentimento basicamente avalia um texto e, com base num algoritmo treinado, classifica esse texto de forma positiva, negativa ou neutra.
 Considerando os modelos mais atuais, poderia utilizar o TF-IDF ou word embeddings. Um modelo mais clássico utilizaria o Bag of Words ou NLTK.
 
-8)	Qual é a diferença entre a classificação de texto e o agrupamento (clustering) de texto em NLP? Em que situações cada um é mais apropriado?
+### 8) Qual é a diferença entre a classificação de texto e o agrupamento (clustering) de texto em NLP? Em que situações cada um é mais apropriado?
 A classificação de textos em NLP consiste em atribuir rótulos ou categorias a um texto como o caso de identificar os textos de um sistema de Ouvidoria em categorias predefinidas como. O agrupamento clusteriza os documentos por semelhança de conteúdo. Um exemplo poderia ser no mesmo sistema de ouvidoria classificar os textos por categorias que não foram predefinidas para identificar padrões naturais dentro dos textos.
 
-9)	Explique o conceito de reconhecimento de entidades nomeadas (NER) em NLP e suas aplicações práticas.
+### 9) Explique o conceito de reconhecimento de entidades nomeadas (NER) em NLP e suas aplicações práticas.
 O NER identifica textos específicos como Nomes de pessoas, Empresas e outros. Hoje utilizo num projeto que separa diversos Olerites existentes em um único PDF identificando cada empregado e atribuindo o olerite individual a esse funcionário.
 
-10)	Como você lidaria com problemas de desequilíbrio de classe em tarefas de classificação de texto em NLP? Quais estratégias seriam eficazes?
+### 10) Como você lidaria com problemas de desequilíbrio de classe em tarefas de classificação de texto em NLP? Quais estratégias seriam eficazes?
 Passei por essa situação pouquíssimas vezes e utilizei a técnica de reamostragem (Sobreamostragem e Bubamostragem) onde pode Aumentar a quantidade de instâncias da classe menos ou Diminuir da classe maior.
-
-
