@@ -40,19 +40,19 @@ Para análise dos dados imagino inicialmente utilizar as bibliotecas Numpy, Seab
 
 **_b) Como você responderia as seguintes questões:_**
 
-   **i. Qual é o desempenho de vendas ao longo do tempo?**
-     Por serem dados ao longo do tempo, eu utilizaria uma análise de série temporal para responder uma série de perguntas. O Desempenho de venda ao longo do tempo poderia ser analisado através de um gráfico de linha ou um gráfico de Barras com a aceleração mensal de vendas.
+**i. Qual é o desempenho de vendas ao longo do tempo?**
+Por serem dados ao longo do tempo, eu utilizaria uma análise de série temporal para responder uma série de perguntas. O Desempenho de venda ao longo do tempo poderia ser analisado através de um gráfico de linha ou um gráfico de Barras com a aceleração mensal de vendas.
 
-   **ii. Quais são os produtos mais vendidos?**
-    A pergunta não define o período, ou seja, poderia responder quais os produtos mais vendidos mensalmente ou os produtos mais vendidos considerando todo o período do Dataframe.
-    Para os dois casos eu utilizaria o manuseio dos dados com Pandas ordenando por volume de vendas e separando os “Top 5” de cada mês ou os “Top 5” do todo o período.
-    Para o caso de apresentar mensalmente eu utilizaria um gráfico de Barras mensal com a identificação de cada “Top 5” mês a mês para facilitar a comparação entre eles.
-    Para o caso de apresentar o “Top 5” do período completo, faria um gráfico de barras de um único período com os 5 produtos para facilitar a comparação entre eles.
+**ii. Quais são os produtos mais vendidos?**
+A pergunta não define o período, ou seja, poderia responder quais os produtos mais vendidos mensalmente ou os produtos mais vendidos considerando todo o período do Dataframe.
+Para os dois casos eu utilizaria o manuseio dos dados com Pandas ordenando por volume de vendas e separando os “Top 5” de cada mês ou os “Top 5” do todo o período.
+Para o caso de apresentar mensalmente eu utilizaria um gráfico de Barras mensal com a identificação de cada “Top 5” mês a mês para facilitar a comparação entre eles.
+Para o caso de apresentar o “Top 5” do período completo, faria um gráfico de barras de um único período com os 5 produtos para facilitar a comparação entre eles.
 
    **iii. Como as vendas variam por categoria de produtos?**
-    Para visualização dessa informação, com o Pandas, faria um “Group” por categoria somando as vendas de cada categoria.
-    Novamente essa informação poderia ser apresentada dentro de forma periódica ou resumida de forma totalizada para o período.
-    Em ambos os casos eu utilizaria novamente gráfico de barras para a apresentação dos dados.
+Para visualização dessa informação, com o Pandas, faria um “Group” por categoria somando as vendas de cada categoria.
+Novamente essa informação poderia ser apresentada dentro de forma periódica ou resumida de forma totalizada para o período.
+Em ambos os casos eu utilizaria novamente gráfico de barras para a apresentação dos dados.
 
 **iv. Qual é a distribuição dos valores de venda?**
 Entendi nessa pergunta que a informação a ser apresentada seria a divisão dos dados conforme os percentis, considerando os valores individuais das vendas.
@@ -68,27 +68,27 @@ Para esse tipo e análise, eu selecionaria os dados de vendas por cliente e util
 Para identificação de grupos de clientes eu utilizaria algoritmos de clusterização, nesse caso, eu preferiria utilizar o k-means. Eu agruparia os clientes com comportamentos de compras semelhantes. Consideraria as compras por volume de gasto, frequência de compra e tipo de produto.
 Essa clusterização pode ser utilizada para iniciar um trabalho mais simples de recomendação de produtos, considerando as compras de cada grupo.
 
-d)	Qual teste estatístico você usaria para provar uma hipótese referente aos segmentos de clientes? e como iria aplicá-lo?
+**_d) Qual teste estatístico você usaria para provar uma hipótese referente aos segmentos de clientes? e como iria aplicá-lo?_**
 Eu utilizaria um método de comparação para provar alguma hipótese envolvendo os segmentos de clientes.
 
-Extra - Pensando nos dados acima, seria possível fazer mais algum tipo de análise?
+### Extra - Pensando nos dados acima, seria possível fazer mais algum tipo de análise?
 
 O dataframe permite uma análise mais profunda de série temporal. Não falo em utilizar o algoritmo de Sarima ou Arima, mas sim uma análise mais aprofundada de Aceleração de Vendas, Quantidades acumuladas, Tendência/Sazonalidade e média móvel.
  
-3)	Exercício 3
-
+### 3) Exercício 3
 Suponha que você tenha uma base de dados contendo textos jurídicos, como decisões judiciais, petições e documentos legais. A base de dados inclui informações sobre o conteúdo do texto, data, jurisdição e outras informações relevantes. Seu objetivo é criar um sistema de recomendação que sugira textos jurídicos semelhantes a um texto de referência.
 Para todos os itens:  Informe as bibliotecas usadas, se necessário, o motivo de cada decisão, explore as possibilidades.
-a)	Descreva como você desenvolveria o sistema de recomendação que recebe um texto de referência e sugere os textos mais semelhantes a ele na base de dados.
+
+**_a) Descreva como você desenvolveria o sistema de recomendação que recebe um texto de referência e sugere os textos mais semelhantes a ele na base de dados._**
 A primeira coisa que eu faria seria o pré-processamento do texto removendo os Stop words e fazendo a lematização.
 Faria o armazenamento dos textos numa base em jason.
 Aqui vou propor algo que não domino, mas estou iniciando meus estudos. Eu faria a vetorização das palavras para um Vector Database.
 
-b)	Como você avaliaria esse sistema de recomendação?
+**_b) Como você avaliaria esse sistema de recomendação?_**
 Separava a base de dados em treino e teste.
 Utilizava alguma métrica de precisão
 
-c)	Suponha que novos textos jurídicos sejam adicionados diariamente. Como você manteria o sistema de recomendação atualizado e garantiria que ele continue a fornece recomendações relevantes?
+**_c) Suponha que novos textos jurídicos sejam adicionados diariamente. Como você manteria o sistema de recomendação atualizado e garantiria que ele continue a fornece recomendações relevantes?_**
 Faria o mesmo processo de pré-processamento dos novos textos.
 Se necessário atualizaria os índices da base de dados Jason
 Treinava novamente o Algoritmo
