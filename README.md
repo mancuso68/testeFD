@@ -40,19 +40,19 @@ Para análise dos dados imagino inicialmente utilizar as bibliotecas Numpy, Seab
 
 **_b) Como você responderia as seguintes questões:_**
 
-    **i. Qual é o desempenho de vendas ao longo do tempo?**
-    Por serem dados ao longo do tempo, eu utilizaria uma análise de série temporal para responder uma série de perguntas. O Desempenho de venda ao longo do tempo poderia ser analisado através de um gráfico de linha ou um gráfico de Barras com a aceleração mensal de vendas.
+   **i. Qual é o desempenho de vendas ao longo do tempo?**
+     Por serem dados ao longo do tempo, eu utilizaria uma análise de série temporal para responder uma série de perguntas. O Desempenho de venda ao longo do tempo poderia ser analisado através de um gráfico de linha ou um gráfico de Barras com a aceleração mensal de vendas.
 
-**ii. Quais são os produtos mais vendidos?**
-A pergunta não define o período, ou seja, poderia responder quais os produtos mais vendidos mensalmente ou os produtos mais vendidos considerando todo o período do Dataframe.
-Para os dois casos eu utilizaria o manuseio dos dados com Pandas ordenando por volume de vendas e separando os “Top 5” de cada mês ou os “Top 5” do todo o período.
-Para o caso de apresentar mensalmente eu utilizaria um gráfico de Barras mensal com a identificação de cada “Top 5” mês a mês para facilitar a comparação entre eles.
-Para o caso de apresentar o “Top 5” do período completo, faria um gráfico de barras de um único período com os 5 produtos para facilitar a comparação entre eles.
+   **ii. Quais são os produtos mais vendidos?**
+    A pergunta não define o período, ou seja, poderia responder quais os produtos mais vendidos mensalmente ou os produtos mais vendidos considerando todo o período do Dataframe.
+    Para os dois casos eu utilizaria o manuseio dos dados com Pandas ordenando por volume de vendas e separando os “Top 5” de cada mês ou os “Top 5” do todo o período.
+    Para o caso de apresentar mensalmente eu utilizaria um gráfico de Barras mensal com a identificação de cada “Top 5” mês a mês para facilitar a comparação entre eles.
+    Para o caso de apresentar o “Top 5” do período completo, faria um gráfico de barras de um único período com os 5 produtos para facilitar a comparação entre eles.
 
-**iii. Como as vendas variam por categoria de produtos?**
-Para visualização dessa informação, com o Pandas, faria um “Group” por categoria somando as vendas de cada categoria.
-Novamente essa informação poderia ser apresentada dentro de forma periódica ou resumida de forma totalizada para o período.
-Em ambos os casos eu utilizaria novamente gráfico de barras para a apresentação dos dados.
+   **iii. Como as vendas variam por categoria de produtos?**
+    Para visualização dessa informação, com o Pandas, faria um “Group” por categoria somando as vendas de cada categoria.
+    Novamente essa informação poderia ser apresentada dentro de forma periódica ou resumida de forma totalizada para o período.
+    Em ambos os casos eu utilizaria novamente gráfico de barras para a apresentação dos dados.
 
 **iv. Qual é a distribuição dos valores de venda?**
 Entendi nessa pergunta que a informação a ser apresentada seria a divisão dos dados conforme os percentis, considerando os valores individuais das vendas.
